@@ -134,3 +134,11 @@ a:hover {
     border-radius: 10px;
     user-select: none;
 }
+@media (max-width: 600px) {
+    .logo {
+        width: 140px;
+    }
+    .carousel img {
+        height: 200px;
+    }
+}
