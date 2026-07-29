@@ -52,3 +52,12 @@ img {
     width: 275px;
     height: 275px;
 }
+@media (max-width: 600px) {
+    img {
+        width: 250px;
+        height: 250px;
+    }
+    .item {
+        width: 250px;
+    }
+}
