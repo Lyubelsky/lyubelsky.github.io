@@ -1,0 +1,74 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="PBR texture generator">
+		<link rel="shortcut icon" href="res/tm-logo.jpeg" type="image/jpeg">
+		<title>Texture Mapper - Lyubelsky</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+		</style>
+	</head>
+	<body>
+		<h3 id="brand">Lyubelsky</h3>
+		<hr>
+
+		<img src="res/tm-logo.jpeg" id="logo">
+		<h1 id="title">Texture Mapper</h1>
+		<!--<button id="purchase">Purchase</button>-->
+		<a href="https://payhip.com/b/E7ROH" class="payhip-buy-button" data-theme="green" data-product="E7ROH">PURCHASE</a>
+		<p id="price">$1.99</p>
+
+		<div class="simple-slider">
+			<div class="slider-track">
+				<img src="res/tm-1.png" alt="Image 1" loading="lazy" draggable="false">
+				<img src="res/tm-2.png" alt="Image 2" loading="lazy" draggable="false">
+				<img src="res/tm-3.png" alt="Image 3" loading="lazy" draggable="false">
+				<img src="res/tm-4.png" alt="Image 3" loading="lazy" draggable="false">
+				<img src="res/tm-5.png" alt="Image 3" loading="lazy" draggable="false">
+			</div>
+		</div>
+
+		<p id="description">Generate PBR textures by uploading a source image and tweaking normal, roughness, metallic, ambient occlusion, and height strength in real time with the 3D preview. Save maps as PNG or JPEG for use in your 3D projects.</p>
+
+		<div id="info">
+			<div class="properties">
+				<p class="property">Platforms: </p>
+				<p class="value">Linux</p>
+				<p class="value">Windows</p>
+			</div>
+		</div>
+
+		<p id="note">
+			This app requires the native WebView runtime for your operating system.
+			<br>
+			<br>
+			<> WINDOWS
+			<br>
+			Most modern Windows systems already include WebView2.
+			<br>
+			If the app does not open, install <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/" target="_blank">WebView2 by Microsoft</a>:
+			<br>
+			<br>
+			<> LINUX
+			<br>
+			Run this command in your terminal:
+			<br>
+			<br>
+		    Fedora: <code>sudo dnf install webkit2gtk4.1 gtk3 gtk4</code>
+			<br>
+			<br>
+		    Ubuntu / Debian: <code>sudo apt install libwebkit2gtk-4.1-0 libgtk-3-0</code>
+		</p>
+
+		<hr style="margin-bottom: 40px">
+		<div class="properties">
+			<p class="property">Contact: </p>
+			<p class="value">lyubelsky.family@mail.ru</p>
+		</div>
+
+		<script type="text/javascript" src="https://payhip.com/payhip.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

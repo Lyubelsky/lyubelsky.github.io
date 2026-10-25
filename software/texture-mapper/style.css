@@ -1,0 +1,148 @@
+* {
+	font-family: "Quantico", sans-serif;
+}
+
+body {
+	background-color: #0F1C0F;
+	text-align: center;
+	margin: 10px;
+	margin-bottom: 50px;
+}
+
+#brand {
+	margin-top: 25px;
+	color: red;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: gray;
+}
+
+#title {
+	color: white;
+}
+
+#logo {
+	width: 100px;
+	border-radius: 12px;
+	margin-top: 20px;
+}
+
+#purchase {
+	color: white;
+	font-size: 16pt;
+	background-color: green;
+	border: none;
+	border-radius: 12px;
+	padding: 8px;
+}
+#purchase:hover {
+	background-color: darkgreen;
+	cursor: pointer;
+}
+
+#price {
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 35px;
+}
+
+#description {
+	color: white;
+	font-size: 20pt;
+	text-align: left;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+#info {
+
+}
+
+.property {
+	color: white;
+	display: inline;
+}
+
+.value {
+	color: white;
+	display: inline;
+	background-color: green;
+	padding: 8px;
+	border-radius: 12px;
+}
+
+.properties {
+	margin-bottom: 25px;
+}
+
+#note {
+	color: white;
+	font-size: 16pt;
+	background-color: darkgreen;
+	border-radius: 12px;
+	padding: 16px;
+	text-align: left;
+	display: inline-block;
+}
+
+code {
+	font-family: monospace;
+	background-color: green;
+	border-radius: 12px;
+	padding: 4px;
+	margin: 5px;
+}
+
+a {
+	color: gray;
+}
+
+.simple-slider {
+  position: relative;
+  max-width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  /* Fixed height so layout stays stable */
+  height: 480px;
+}
+
+.slider-track {
+  display: flex;
+  gap: 16px; /* Space between images */
+  touch-action: pan-x; /* Enable native touch scroll */
+  will-change: transform;
+  /* Allow horizontal scrolling */
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.slider-track::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-track img {
+  /* Keep the whole image visible, no cropping */
+  height: 480px;
+  object-fit: contain;
+  display: block;
+  border-radius: 12px;
+
+  /* Preserve natural width, don’t force it to 100% */
+  flex: 0 0 auto;
+
+  /* Remove any snap behavior */
+  scroll-snap-align: none;
+}
+
+/* Mobile: reduce height so it fits smaller screens */
+@media (max-width: 600px) {
+  .simple-slider {
+    height: 320px;
+  }
+}
